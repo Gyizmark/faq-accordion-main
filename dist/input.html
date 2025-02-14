@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <main>
+    <section class="w-full relative m-auto h-screen bg-lightPink">                  
+      <picture>
+        <source media="(min-width: 900px)" srcset="./assets/images/background-pattern-desktop.svg">
+        <source media="(max-width: 465px)" srcset="./assets/images/background-pattern-mobile.svg">
+        <img src="./assets/images/background-pattern-desktop.svg" class="w-full" alt="background image">
+      </picture>
+      <div class="bg-white p-8 rounded-md shadow-lg absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-28  max-md:-mt-[6rem] max-sm:-mt-[13rem]">
+        <div>
+          <span class="text-darkPurple font-bold text-5xl px-6 mt-2">
+            <img src="./assets/images/icon-star.svg" class="inline" alt="star icon"> FAQs
+          </span>
+        </div>
+        <div class="divide divide-y">
+          <div class="text-justify">
+            <div id="btn1" class="flex justify-between gap-10 cursor-pointer">
+              <button aria-expanded="false" class="font-bold text-darkPurple py-4 text-left focus:text-purple-700">What is Frontend Mentor, and how will it help?</button>
+              <img id="myImage1" class="inline cursor-pointer" src="./assets/images/icon-plus.svg" alt="Expand FAQ section">
+            </div>
+            <p id="p1" class="hidden text-grayishPurple">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+          </div>
+          <div>
+            <div id="btn2" class="flex justify-between gap-10 cursor-pointer">
+              <button aria-expanded="false" class="font-bold text-darkPurple py-4 text-left focus:text-purple-700">Is Frontend Mentor free?</button>
+              <img id="myImage2" class="inline cursor-pointer" src="./assets/images/icon-plus.svg" alt="Expand FAQ section">
+            </div>
+            <p id="p2" class="hidden text-grayishPurple">Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+          </div>
+          <div>
+            <div id="btn3" class="flex justify-between gap-10 cursor-pointer">
+              <button aria-expanded="false" class="font-bold text-darkPurple py-4 text-left focus:text-purple-700">Can I use Frontend Mentor projects in my portfolio?</button>
+              <img id="myImage3" class="inline cursor-pointer" src="./assets/images/icon-plus.svg" alt="Expand FAQ section">
+            </div>
+            <p id="p3" class="hidden text-grayishPurple">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!</p>
+          </div>
+          <div>
+            <div id="btn4" class="flex justify-between gap-10 cursor-pointer ">
+              <button aria-expanded="false" class="font-bold text-darkPurple py-4 text-left focus:text-purple-700">How can I get help if I'm stuck on a Frontend Mentor challenge?</button>
+              <img id="myImage4" class="inline cursor-pointer" src="./assets/images/icon-plus.svg" alt="Expand FAQ section">
+            </div>
+            <p id="p4" class="hidden text-grayishPurple">The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
+          </div>
+        </div>
+      </div>
+    </section>                
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
